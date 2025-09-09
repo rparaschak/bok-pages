@@ -1,17 +1,16 @@
 # Configurations
-title:            NorthGRC Knowledge Base
-longtitle:        NorthGRC Development and Business Knowledge Base
-author:           NorthGRC Team
-email:            team@northgrc.com
+title:            Software Development Book of Knowledge
+longtitle:        Software Development Book of Knowledge
+author:           Roman Parashchak
+email:            roman.paraschak@gmail.com
 description: >
-  Knowledge base for NorthGRC Development and Business teams. 
-  Process descriptions, tools, FAQ, and team resources.
+  Knowledge base describing processes, tools, etc. 
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://northgrc.github.io'
-baseurl:          '/processes'
+url:              ''
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
@@ -20,7 +19,7 @@ remote_theme: sighingnow/jekyll-gitbook
 toc:
   enabled: true
   h_min:   1
-  h_max:   1
+  h_max:   2
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
 favicon_path:     /assets/gitbook/images/favicon.ico

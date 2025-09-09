@@ -1,27 +1,39 @@
 ---
 title: Welcome
-author: NorthGRC Team
-date: 2025-08-20
+author: Roman Parashchak
+date: 2025-09-09
 category: Home
 layout: home
 ---
 
-Welcome to the NorthGRC Knowledge Base - your central hub for development and business processes, tools, and resources.
+Welcome to the Software Development Book of Knowledge - a comprehensive resource presenting key concepts and best practices in software development, DevOps, and team performance.
 
-## About This Knowledge Base
+## About This Resource
 
-This source serves as a comprehensive knowledge repository for NorthGRC Development and Business teams. Here we maintain:
+This Book of Knowledge presents complex software development topics in an accessible, presentation-style format designed for both technical professionals and management audiences. Each topic serves as a structured presentation that explains key concepts with visual aids and practical applications.
 
-- **Process Documentation**: Detailed descriptions of our development workflows, business procedures, and operational guidelines
-- **Tools & Resources**: Information about the tools we use, how to access them, and best practices for their implementation
-- **Frequently Asked Questions**: Common questions and their answers to help team members quickly find solutions
-- **Team Guidelines**: Standards, conventions, and best practices that ensure consistency across all our projects
+### What You'll Find Here
+
+- **Performance & Culture**: Insights into high-performing teams, elite performance science, and cultural foundations
+- **DevOps Best Practices**: Modern approaches to software delivery, automation, and operational excellence  
+- **Development Methodologies**: Agile transformation strategies, team dynamics, and process optimization
+- **Data-Driven Insights**: DORA metrics, research summaries, and evidence-based practices
+- **Visual Learning**: Mermaid diagrams, charts, and interactive content to enhance understanding
+
+### Content Approach
+
+Each topic is structured as a presentation rather than traditional documentation, featuring:
+- Clear overviews and key concepts
+- Visual models and process diagrams  
+- Real-world examples and case studies
+- Practical implementation guidelines
+- Actionable takeaways for different audiences
 
 ## Getting Started
 
-Navigate through the sections using the sidebar to find the information you need. Whether you're looking for development processes, business procedures, or need quick answers to common questions, everything is organized for easy access and constant availability to our knowledge base.
+Use the sidebar navigation to explore different topics. Each page is designed to be consumed independently while building upon foundational concepts presented throughout the knowledge base.
 
 > ##### TIP
 >
-> Use the search functionality to quickly find specific topics across all documentation.
+> Use the search functionality to quickly find specific concepts, methodologies, or best practices across all content.
 {: .block-tip }

@@ -4,7 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll theme repository that provides a GitBook-style theme for Jekyll sites. The theme allows users to create documentation sites with GitBook's appearance while leveraging Jekyll's static site generation capabilities and GitHub Pages deployment.
+This is a **Book of Knowledge** site that presents different topics in a presentation-style format for customers. Each topic (left menu item) serves as a presentation explaining key concepts for both technical staff and managers. 
+
+### Content Goals
+- Present complex topics in an accessible, easy-to-understand format
+- Target both technical and management audiences
+- Use visual aids (Mermaid diagrams, charts) when appropriate
+- Structure content as presentations rather than traditional documentation
+
+### Example Topics
+- Habits of highly performant teams
+- DORA 2025 summary
+- DevOps best practices
+- Agile transformation strategies
 
 
 ### Dependencies
@@ -40,14 +52,42 @@ This is a Jekyll theme repository that provides a GitBook-style theme for Jekyll
 - Remote theme configuration for easy updates
 - Markdown rendering with kramdown and GFM input
 
-## Page Development
+## Content Development
 
-When working on creating or editing pages, **always read `gitbook-guidelines.md` first** for a comprehensive reference of:
-- Available components (alert blocks, tables, math, diagrams)
-- Front matter configuration options
-- Layout choices and best practices
-- Component usage examples and syntax
+When creating or editing presentation pages, **always read `gitbook-guidelines.md` first** for a comprehensive reference of available components and syntax.
+
+### Presentation Guidelines
+- Structure content as presentations with clear sections and takeaways
+- Do not overuse headers, prefer longer sections if needed for easier navigation. Too many headings take too much space.
+- Use Mermaid diagrams proactively to visualize concepts, workflows, and relationships
+- Include practical examples and real-world applications
+- Balance technical depth with managerial insights
+- Use visual elements (charts, diagrams, callouts) to enhance understanding
 - Never add titles like #Welcome as title is always defined at the top of md file
+
+### Content Quality Standards
+- **Research-Backed**: Every claim must be supported by real data, studies, or industry research (DORA metrics, DevEx research, Stack Overflow surveys, etc.)
+- **Actionable Insights**: Each section must provide specific, implementable actions with clear next steps
+- **Dense Information**: Eliminate academic language and filler content - every sentence should deliver high-value insights
+- **Quantified Recommendations**: Include specific numbers, percentages, timelines, and measurable outcomes when available
+- **Real-World Examples**: Use concrete case studies with measurable results (e.g., "Company X reduced deployment frequency by 40% using technique Y")
+- **Immediate Applicability**: Readers should be able to implement recommendations within days/weeks, not months
+- **Multi-Level Value**: Provide tactical details for implementers AND strategic insights for decision-makers
+- **Evidence-Based**: Prefer industry data over anecdotal evidence - cite sources when making claims
+
+### Recommended Content Structure
+1. **Overview/Introduction** - Brief context and objectives
+2. **Key Concepts** - Core principles explained clearly
+3. **Visual Models** - Diagrams showing relationships and processes
+4. **Practical Applications** - Real-world examples and use cases
+5. **Implementation Guidelines** - Action items and best practices
+6. **Takeaways** - Summary of key points for different audiences
+
+### Development workflow
+- [ ] Research the topic, browse web if needed.
+- [ ] Give a structure proposal
+- [ ] Implement the page/section/change
+- [ ] Do not run any build/run commands as server is always running locally
 
 ```
 // Example of embedding mermaid diagrams inside of html
@@ -59,3 +99,4 @@ When working on creating or editing pages, **always read `gitbook-guidelines.md`
         C-->D;
   </div>
 ```
+- When using blocks like tip or danger, do not use "TIP" or "DANGER". Instead of ##### TIP use ##### Quick DORA Assessment. Or > ##### Danger should be > ##### The Cost of Low Performance
