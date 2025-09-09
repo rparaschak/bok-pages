@@ -4,7 +4,6 @@ layout: post
 mermaid: true
 toc: true
 order: 2
-pagenum: 2
 ---
 
 ## Overview

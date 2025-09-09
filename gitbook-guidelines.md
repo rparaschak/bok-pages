@@ -12,6 +12,7 @@ title: Page Title
 layout: post        # or 'home' for main pages
 mermaid: true      # Enable if using Mermaid diagrams
 toc: true          # Enable table of contents (optional)
+order: 1           # Controls navigation menu order (lower numbers appear first)
 ---
 ```
 
@@ -19,6 +20,29 @@ toc: true          # Enable table of contents (optional)
 - `post` - Standard content pages
 - `home` - Homepage layout
 - `search-base` - Search functionality
+
+### Navigation Order Control
+
+To control the order of pages in the left navigation menu, use the `order` front matter variable:
+
+```yaml
+---
+title: "First Page"
+order: 1           # This page appears first
+---
+```
+
+```yaml
+---
+title: "Second Page" 
+order: 2           # This page appears second
+---
+```
+
+**Important Notes:**
+- Use integer values for `order` (not strings)
+- Lower numbers appear higher in the menu
+- Pages without an `order` value may appear in unpredictable positions
 
 ## Alert Blocks
 
@@ -30,6 +54,14 @@ The theme supports three types of styled alert blocks using Kramdown attributes:
 >
 > This is a helpful tip for readers. Use this for suggestions,
 > best practices, or useful information.
+{: .block-tip }
+```
+
+**For Real-World Stories:** Use tip blocks for all real-world case studies and success stories. Header should follow the pattern "Company Name Story":
+```markdown
+> ##### Amazon Story
+>
+> Real-world case study content with specific metrics and outcomes...
 {: .block-tip }
 ```
 
@@ -246,6 +278,65 @@ google_analytics: UA-XXXXXXXX-X
 - Place markdown files in appropriate collections (`_posts`, `_pages`, `_others`)
 - Use meaningful file names that reflect content
 - Include proper permalinks in front matter if needed
+
+## Jekyll Collections and Content Organization
+
+Jekyll collections provide a powerful way to group and organize related content beyond just blog posts and pages.
+
+### Collection Configuration
+
+Define collections in `_config.yml`:
+
+```yaml
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: order    # Sort by the 'order' front matter field
+
+ordered_collections:
+  - pages             # Specify collection order for navigation
+```
+
+### Collection Directory Structure
+
+```
+_pages/
+├── elite-performance-science.md    # order: 1
+├── cultural-foundations.md         # order: 2
+└── other-topic.md                  # order: 3
+```
+
+### Collection Front Matter
+
+Each document in a collection should include:
+
+```yaml
+---
+title: "Document Title"
+layout: post
+order: 1              # Determines sort order within collection
+collection: pages     # Optional: explicitly specify collection
+---
+```
+
+### Accessing Collections in Templates
+
+Collections are accessible via Liquid templating:
+
+```liquid
+{% assign sorted_pages = site.pages | sort: 'order' %}
+{% for page in sorted_pages %}
+  <a href="{{ page.url }}">{{ page.title }}</a>
+{% endfor %}
+```
+
+### Benefits of Collections
+
+- **Organized Content**: Group related documents together
+- **Custom Sorting**: Control document order with front matter variables
+- **Flexible Output**: Generate individual pages or use as data source
+- **Metadata Management**: Add custom properties to content groups
 
 ### Performance
 - Optimize images before embedding
