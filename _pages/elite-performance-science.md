@@ -22,11 +22,17 @@ This presentation reveals breakthrough findings from "Accelerate" by Nicole Fors
 
 ## Waterfall vs Agile: The Performance Reality
 
-**The data is unambiguous: agile methodologies achieve a 40% success rate compared to waterfall's dismal 15%, while maintaining only a 10% failure rate versus waterfall's catastrophic 30%.** This isn't about methodology preference—it's about mathematical certainty. Waterfall projects consistently take longer because all requirements must be agreed upon before development begins, creating **artificial constraints that ignore market reality**. Meanwhile, agile uses short iterations to deliver value rapidly, allowing teams to adjust plans based on real customer feedback rather than theoretical specifications. The speed difference is dramatic: agile teams capture market opportunities **46x faster** than waterfall competitors, making the choice between methodologies a question of business survival.
+**The data is unambiguous: agile methodologies achieve a 40% success rate compared to waterfall's dismal 15%, while maintaining only a 10% failure rate versus waterfall's catastrophic 30%.** Waterfall projects consistently take longer because all requirements must be agreed upon before development begins, creating artificial constraints that ignore market reality. The speed difference is dramatic: agile teams capture market opportunities **46x faster** than waterfall competitors, making the choice between methodologies a question of business survival.
 
-**But here's the crucial misconception: having sprints in Jira, hiring scrum masters, and conducting daily standups doesn't make you agile—it makes you a victim of "cargo cult agile."** Research reveals that organizations following agile ceremonies without understanding agile principles achieve no better results than traditional waterfall teams. They set up Jira boards, rename project managers to "product owners," and work in sprints, expecting transformation through process theater. True agile isn't about rituals—it's about rapid iteration with tight user feedback loops, where **customer collaboration trumps contract negotiation** and **responding to change beats following rigid plans**. Teams practicing cargo cult agile spend their time in status meetings and ceremony compliance while missing the fundamental point: delivering working software to real users quickly.
+| **What Agile IS** ✅                                                                 | **What Agile IS NOT** ❌ |
+|---------------------------------------------------------------------------------------------------|-------------------------------------|
+| ✅ **Fast feedback loops** - Learning from customers in hours/days instead of months | ❌ **Having a scrum master** - Role-based thinking instead of team empowerment |
+| ✅ **Painless pivots** - Evidence-based adaptation when requirements change | ❌ **Renaming roles** - Project managers becoming "product owners" without behavioral change |
+| ✅ **Responding to change** - Flexibility over rigid plan adherence | ❌ **Ceremony compliance** - Meeting attendance over delivering working software |
+| ✅ **Working software focus** - Functional product over comprehensive documentation | ❌ **Sprints in Jira** - Tool-focused approach expecting automatic transformation |
+| ✅ **Empowered teams** - Self-organizing teams making technical decisions autonomously | ❌ **Process theater** - Following agile rituals without understanding principles |
 
-**Authentic agile is a philosophy centered on four core actions: collaborate, deliver, reflect, improve.** It requires cultural transformation where teams are empowered to make decisions, experiment with solutions, and adapt based on evidence rather than hierarchy. The philosophy works because users are the ultimate fitness criteria for software, not internal stakeholders or predetermined requirements. The 24 capabilities that follow become the technical enablers that make true agile possible—you can't respond to change if deploying takes weeks, and you can't collaborate effectively if feedback loops are measured in months. Organizations that understand this connection achieve the **2x profitability advantage** and **49% focus on innovation** that separates elite performers from agile theater participants.
+**The core insight: Authentic agile is a philosophy centered on collaborate, deliver, reflect, improve.** It requires cultural transformation where teams are empowered to make decisions, experiment with solutions, and adapt based on evidence rather than hierarchy. The philosophy works because users are the ultimate fitness criteria for software, not internal stakeholders or predetermined requirements. The 24 capabilities that follow become the technical enablers that make true agile possible—you can't respond to change if deploying takes weeks, and you can't collaborate effectively if feedback loops are measured in months. Organizations that understand this connection achieve the **2x profitability advantage** and **49% focus on innovation** that separates elite performers from agile theater participants.
 
 ## The Four Metrics
 
@@ -121,7 +127,6 @@ mindmap
       Test Automation
       Test Data Management
       Shift Left Security
-      Continuous Delivery
     Architecture
       Loosely Coupled Architecture
       Empowered Teams
